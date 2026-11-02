@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -21,7 +22,7 @@ jobs:
         run: brew style adeoluo/tap
       - name: Install and test
         run: |
-          for f in vectordb profile-forge agent-sandbox; do
+          for f in vectordb profile-forge agent-sandbox corpus-dedup; do
             brew install "adeoluo/tap/$f"
             brew test "adeoluo/tap/$f"
           done
