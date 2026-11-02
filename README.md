@@ -24,6 +24,7 @@
 
 ```bash
 brew tap adeoluo/tap
+brew trust --tap adeoluo/tap   # Homebrew 7 and later require trusting third-party taps
 brew install vectordb agent-sandbox profile-forge
 ```
 
