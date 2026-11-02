@@ -32,6 +32,16 @@ brew install vectordb agent-sandbox corpus-dedup profile-forge
 Prebuilt binaries are used for macOS and Linux on arm64 and amd64 where a release provides them;
 `agent-sandbox` and `corpus-dedup` compile from the tagged source release.
 
+### Demos
+
+Recorded from real runs with [vhs](https://github.com/charmbracelet/vhs); each tape is in `docs/demo/`.
+
+Installing from the tap and running the installed tools.
+
+<p align="center">
+  <img src="docs/demo/install.gif" alt="Installing from the tap and running the installed tools" width="860">
+</p>
+
 ## Testing
 
 CI runs `brew style` and `brew audit` on every formula, then installs each one and runs its
