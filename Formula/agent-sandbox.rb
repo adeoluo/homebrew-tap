@@ -1,8 +1,8 @@
 class AgentSandbox < Formula
   desc "Policy-based sandbox for running AI agent tool calls"
   homepage "https://github.com/adeoluo/agent-sandbox"
-  url "https://github.com/adeoluo/agent-sandbox/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "591b1457e040e28aa81f4cec7fc4aba277b216bdb2baf37a08c13562f747b356"
+  url "https://github.com/adeoluo/agent-sandbox/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "81d69e94f621c9814aea731a466626ba7192f449918ddd0462811e3d24fa5cc1"
   license "MIT"
 
   depends_on "rust" => :build
