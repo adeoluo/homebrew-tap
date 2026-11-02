@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up tap
+        run: |
+          mkdir -p "$(brew --repository)/Library/Taps/adeoluo"
+          ln -s "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/adeoluo/homebrew-tap"
+      - name: Style
+        run: brew style adeoluo/tap
+      - name: Install and test
+        run: |
+          for f in vectordb profile-forge agent-sandbox; do
+            brew install "adeoluo/tap/$f"
+            brew test "adeoluo/tap/$f"
+          done
