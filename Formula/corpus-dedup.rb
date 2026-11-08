@@ -1,8 +1,8 @@
 class CorpusDedup < Formula
   desc "Remove near-duplicate lines from JSONL corpora with MinHash and LSH"
   homepage "https://github.com/adeoluo/corpus-dedup-library"
-  url "https://github.com/adeoluo/corpus-dedup-library/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "b9015c136213300570fda91ddd44f108c712201ddba323f40a1017378b9e7d41"
+  url "https://github.com/adeoluo/corpus-dedup-library/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "8a3d305f44a972195f9e6269e04125ae5afd4a0b406c81fd01e7aa0fe510377d"
   license "MIT"
 
   depends_on "rust" => :build
