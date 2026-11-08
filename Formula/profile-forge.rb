@@ -1,28 +1,28 @@
 class ProfileForge < Formula
   desc "Generate a GitHub profile README from live repository metadata"
   homepage "https://github.com/adeoluo/profile-forge"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/adeoluo/profile-forge/releases/download/v0.4.0/profile-forge_v0.4.0_darwin_arm64.tar.gz"
-      sha256 "b8fcbedc0cffa76af54bd817d754f69efd83fbb3c712628ac49a2a46eb645ee4"
+      url "https://github.com/adeoluo/profile-forge/releases/download/v0.5.0/profile-forge_v0.5.0_darwin_arm64.tar.gz"
+      sha256 "a62dd3f3dd7571f406f0eae67f1cdcea12c5d0bfbab79266c93abc9bfbf150d0"
     end
     on_intel do
-      url "https://github.com/adeoluo/profile-forge/releases/download/v0.4.0/profile-forge_v0.4.0_darwin_amd64.tar.gz"
-      sha256 "b4f786c2b0d12acb26c35fc933d3cb03200582205aff1cc618071050a3129a68"
+      url "https://github.com/adeoluo/profile-forge/releases/download/v0.5.0/profile-forge_v0.5.0_darwin_amd64.tar.gz"
+      sha256 "49d41de9cf5218afea504f0ab0420c9d924db4ada0e5ee610c242bb44a3b71f6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/adeoluo/profile-forge/releases/download/v0.4.0/profile-forge_v0.4.0_linux_arm64.tar.gz"
-      sha256 "14f3e6b0eea6bca7cd30b9f040289753cc9e8754ca1b5b7b0b088fd5e5fca6b1"
+      url "https://github.com/adeoluo/profile-forge/releases/download/v0.5.0/profile-forge_v0.5.0_linux_arm64.tar.gz"
+      sha256 "6ca889f86ed8092ccde05539b2ad91abbdee274d593f56823d21aea976f79916"
     end
     on_intel do
-      url "https://github.com/adeoluo/profile-forge/releases/download/v0.4.0/profile-forge_v0.4.0_linux_amd64.tar.gz"
-      sha256 "606188cf0c2e83b65e126754dcbe221da717d1373a1d34c557387038eaa7967e"
+      url "https://github.com/adeoluo/profile-forge/releases/download/v0.5.0/profile-forge_v0.5.0_linux_amd64.tar.gz"
+      sha256 "a818131b70ddeffbfa6a9f7d396939b65e33f7b0fdea8ef740a1c78c55b905b3"
     end
   end
 
